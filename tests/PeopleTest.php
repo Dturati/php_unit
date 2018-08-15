@@ -28,6 +28,7 @@ class PeopleTest extends TestCase
         $this->assertInternalType('array', $people->getSkills());
         $this->assertEquals(null, $people->setSkills($skills));
         $this->assertEquals($skills, $people->getSkills());
+        $this->assertContains('Loiro',$people->getSkills());
     }
 
 }
